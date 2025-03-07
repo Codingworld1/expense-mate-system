@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowDownIcon, ArrowUpIcon, CheckCircle2, Clock, FileText, PieChart, RefreshCcw, UserIcon, X } from 'lucide-react';
@@ -146,7 +147,7 @@ interface StatCardProps {
 
 const StatCard: React.FC<StatCardProps> = ({ title, value, change, trend, icon: Icon, onClick }) => {
   return (
-    <Card className="overflow-hidden" hoverEffect onClick={onClick}>
+    <Card className="overflow-hidden hover:shadow-md transition-shadow cursor-pointer" onClick={onClick}>
       <CardContent className="p-6">
         <div className="flex items-center justify-between">
           <div>
