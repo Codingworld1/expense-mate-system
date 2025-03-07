@@ -1,13 +1,11 @@
-
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { BarChart, PieChart, ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import { BarChart, PieChart, Pie, Cell, ComposedChart, Line, Area, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 import { Download, FileDown, Filter } from 'lucide-react';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { useToast } from '@/hooks/use-toast';
 
-// Dummy data
 const monthlyData = [
   { name: 'Jan', expenses: 4200, budget: 5000 },
   { name: 'Feb', expenses: 3800, budget: 5000 },
@@ -235,14 +233,5 @@ export const AnalyticsDashboard = () => {
         </CardContent>
       </Card>
     </div>
-  );
-};
-
-// Needed for PieChart
-const Cell = ({ fill, children }: any) => {
-  return (
-    <g fill={fill}>
-      {children}
-    </g>
   );
 };

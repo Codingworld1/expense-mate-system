@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { ArrowDownIcon, ArrowUpIcon, CheckCircle2, Clock, FileText, PieChart, RefreshCcw, UserIcon, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';

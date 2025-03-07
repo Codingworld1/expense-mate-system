@@ -1,12 +1,11 @@
-
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Textarea } from '@/components/ui/textarea';
-import { FileUpload, Upload, DollarSign, Calendar, ArrowLeft } from 'lucide-react';
+import { Upload, DollarSign, Calendar, ArrowLeft } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { useToast } from '@/hooks/use-toast';
 
@@ -121,7 +120,7 @@ export const ExpenseForm = () => {
               <div className="space-y-2">
                 <Label>Attachments</Label>
                 <div className="border-2 border-dashed border-border rounded-lg p-6 text-center cursor-pointer hover:bg-muted/50 transition-colors">
-                  <FileUpload className="h-8 w-8 mx-auto text-muted-foreground mb-2" />
+                  <Upload className="h-8 w-8 mx-auto text-muted-foreground mb-2" />
                   <p className="text-sm text-muted-foreground">
                     Drag and drop files here, or <span className="text-primary font-medium">browse</span>
                   </p>
@@ -168,3 +167,4 @@ export const ExpenseForm = () => {
     </div>
   );
 };
+
